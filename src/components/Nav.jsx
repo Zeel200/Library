@@ -1,34 +1,37 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import LibraryLogo from "../assets/Library.svg"
 
 const Nav = () => {
-     <nav>
-          <div className="nav__container">
-               <a href="/">
-                    <img src="/assets/Library.svg" alt="" className="logo" />
-               </a>
-               <ul className="nav__links">
-                    <li className="nav_list">
-                         <a href="" className="nav_link">
-                              Home
-                         </a>
+    return (
+        <nav>
+            <div className="nav__container">
+                <a href="/">
+                    <img src={LibraryLogo} alt="" className="logo" />
+                </a>
+                <ul className="nav__links">
+                    <li className="nav__list">
+                        <a href="" className="nav__link">
+                            Home
+                        </a>
                     </li>
-                    <li className="nav_list">
-                         <a href="" className="nav_link">
-                              Books
-                         </a>
+                    <li className="nav__list">
+                        <a href="" className="nav__link">
+                            Books
+                        </a>
                     </li>
-                    <li className="nav_list">
-                         <a href="" className="nav_link">
-                              Contact Us
-                         </a>
+                    <li className="nav__list">
+                        <a href="" className="nav__link">
+                            Contact Us
+                        </a>
                     </li>
                     <button className="btn__menu">
-                         <FontAwesomeIcon icon="bars" />
+                        <FontAwesomeIcon icon="bars" />
                     </button>
-               </ul>
-          </div>
-     </nav>
+                </ul>
+            </div>
+        </nav>
+    );
 }
 
 export default Nav;
