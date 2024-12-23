@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import {book} from "../data"
 
-const Book = ({ book }) => {
+const Book = ({book}) => {
      return (
           <div className="book">
                <a href="">
