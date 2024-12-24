@@ -1,19 +1,20 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes and Route
 import './index.css';
 import Nav from './components/Nav.jsx';
-import Landing from './components/landing.jsx';
-import Highlights from './components/highlight.jsx';
-import Featured from './components/featured.jsx';
-import Discounted from './components/UI/discounted.jsx';
+import Home from './pages/home.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Landing />
-      <Highlights />
-      <Featured />
-      <Discounted />
-    </div>
+    <Router>
+      <div className='App'>
+        <Nav />
+        <Routes>
+          <Route
+            path="/" exact element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
