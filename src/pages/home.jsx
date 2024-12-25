@@ -1,6 +1,6 @@
 import React from "react";
 import Landing from "../components/landing";
-import Highlight from "../components/UI/highlight";
+import Highlights from "../components/highlight";
 import Featured from "../components/featured";
 import Discounted from "../components/UI/discounted";
 
@@ -8,7 +8,7 @@ const Home = () => {
      return (
           <>
                <Landing />
-               <Highlight />
+               <Highlights />
                <Featured />
                <Discounted />
           </>
