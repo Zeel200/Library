@@ -4,6 +4,7 @@ import './index.css';
 import Nav from './components/Nav.jsx';
 import Home from './pages/home.jsx';
 import Books from './pages/Books.jsx';
+import { books } from './data.js';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/books" element={<Books />} />
+          <Route path="/books" element={<Books books={books} />} />  // Corrected this line
         </Routes>
       </div>
     </Router>
@@ -20,3 +21,4 @@ function App() {
 }
 
 export default App;
+
