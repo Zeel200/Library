@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { books } from "../data"
-import Book from "../components/UI/books";
+import Books from "../components/UI/books";
 
-const Books = ({ books: initialBooks }) => {
+const BooksPage = ({ books: initialBooks }) => {
      const [books, setBooks] = useState(initialBooks);
 
      function filterBooks(filter) {
@@ -45,4 +44,4 @@ const Books = ({ books: initialBooks }) => {
      )
 }
 
-export default Books
+export default BooksPage

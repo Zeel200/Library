@@ -13,7 +13,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/books" element={<Books books={books} />} />  // Corrected this line
+          <Route path="/books" element={<Books books={books} />} />
         </Routes>
       </div>
     </Router>
